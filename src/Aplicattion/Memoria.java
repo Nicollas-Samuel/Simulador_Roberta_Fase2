@@ -18,6 +18,10 @@ public class Memoria implements Comparable<Memoria> {
   public Memoria() {
   };
   
+  public int getId() {
+	return id;
+  };
+
   public int getTamanhoAlocacao() {
     return tamanhoAlocacao;
   };
@@ -28,6 +32,10 @@ public class Memoria implements Comparable<Memoria> {
   
   public void setMemory(int memory) {
 	this.memory = memory;
+  };
+  
+  public void setId(int id) {
+	this.id = id;
   };
   
   public void a() {

@@ -9,10 +9,13 @@ public class GeredorProcessos {
 	public int memory = 1000;
 
     public Memoria gerarProcesso(){
-    	for (int i = 0; i < 4; i++) {
-    		int id = random.nextInt(51);
+    	for (int i = 0; i < 100; i++) {
+    		int id = i;
             int tamanhoAlocacao = 10 + random.nextInt(51);
-
+            
+            Memoria memoria = new Memoria(id, memory, tamanhoAlocacao);
+            memoria.a();
+            
             memory -= tamanhoAlocacao;
     	};
 
