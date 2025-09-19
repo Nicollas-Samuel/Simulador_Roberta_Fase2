@@ -4,17 +4,19 @@ import java.util.Random;
 
 public class GeredorProcessos {
     private Random random = new Random();
-	public String tamanhoAlocacao;
+	public int tamanhoAlocacao;
+	
+	public int memory = 1000;
 
-    public Memoria gerarProcesso() {
-        int id = random.nextInt(41);
-        int tamanhoAlocacao = 10 + random.nextInt(41);
+    public Memoria gerarProcesso(){
+    	for (int i = 0; i < 4; i++) {
+    		int id = random.nextInt(51);
+            int tamanhoAlocacao = 10 + random.nextInt(51);
 
-        return new Memoria(id, tamanhoAlocacao);
-	};
+            memory -= tamanhoAlocacao;
+    	};
 
-	@Override
-	public String toString() {
-		return "GeredorProcessos [random=" + random + "]";
+        int id = 0;
+		return new Memoria(id, memory, tamanhoAlocacao);
 	};
 };
