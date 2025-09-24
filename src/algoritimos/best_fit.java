@@ -22,7 +22,6 @@ public class best_fit extends first_fit { // Herda o método de alocação
             alocarNesteBloco(processo, melhorBloco);
             return true;
         };
-        
         return false;
     };
 };

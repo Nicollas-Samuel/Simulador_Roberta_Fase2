@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Memoria {
+	
+	// Classe interna para representar um bloco de memória
 	public static class Bloco {
         public Processo processo; // null se o bloco estiver livre
         public int tamanho;

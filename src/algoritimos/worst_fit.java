@@ -24,8 +24,5 @@ public class worst_fit extends first_fit {
         };
 
         return false;
-    }
-
-	protected void alocarNesteBloco(Processo processo, Bloco piorBloco) {
-	};
+    };
 };

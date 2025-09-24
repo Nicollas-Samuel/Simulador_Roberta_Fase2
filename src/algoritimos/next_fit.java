@@ -28,7 +28,6 @@ public class next_fit extends first_fit {
             };
             atual = atual.proximo;
         };
-
         return false; // Não encontrou espaço em nenhuma volta
     };
 };
